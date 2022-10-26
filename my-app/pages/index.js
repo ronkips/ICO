@@ -267,8 +267,8 @@ export default function Home() {
     // If user is not connected to the Goerli network, let them know and throw an error
     const { chainId } = await web3Provider.getNetwork();
     if (chainId !== 5) {
-      window.alert("Change the network to Goerli");
-      throw new Error("Change network to Goerli");
+      window.alert(" Please change the network to Goerli");
+      throw new Error("Please change network to Goerli");
     }
 
     if (needSigner) {
@@ -340,7 +340,7 @@ export default function Home() {
       return (
         <div>
           <div className={styles.description}>
-            {tokensToBeClaimed * 10} Tokens can be claimed!
+            {tokensToBeClaimed * 100} Tokens can be claimed!
           </div>
           <button className={styles.button} onClick={claimCryptoDevTokens}>
             Claim Tokens
@@ -381,7 +381,7 @@ export default function Home() {
       </Head>
       <div className={styles.main}>
         <div>
-          <h1 className={styles.title}>Welcome to Crypto Devs ICO!</h1>
+          <h1 className={styles.title}>Yooh welcome to Crypto Devs ICO!</h1>
           <div className={styles.description}>
             You can claim or mint Crypto Dev tokens here
           </div>
@@ -394,7 +394,7 @@ export default function Home() {
               </div>
               <div className={styles.description}>
                 {/* Format Ether helps us in converting a BigNumber to string */}
-                Overall {utils.formatEther(tokensMinted)}/10000 have been
+                Overall {utils.formatEther(tokensMinted)}/100000 have been
                 minted!!!
               </div>
               {renderButton()}
@@ -406,7 +406,7 @@ export default function Home() {
           )}
         </div>
         <div>
-          <img className={styles.image} src="./0.svg" />
+          <img className={styles.image} src="./18.svg" />
         </div>
       </div>
 
